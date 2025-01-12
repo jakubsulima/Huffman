@@ -133,7 +133,7 @@ def load_encoded_file(encoded_filename, codes_filename):
             char = codes_file.read(char_length).decode("utf-8")
             code_length = int(codes_file.read(1)[0])
             code = codes_file.read(code_length).decode("utf-8")
-            codes[code] = char
+            codes[char] = code
 
     return encoded_text, codes
 
